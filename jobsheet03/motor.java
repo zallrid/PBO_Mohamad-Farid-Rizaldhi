@@ -1,14 +1,43 @@
 package jobsheet03;
 
 public class motor {
-    public String platNomor;
-    public boolean statusMesin;
-    public int kecepatan;
+    private String platNomor;
+    private boolean statusMesin;
+    private int kecepatan;
 
-    public void displayInfo(){
+    public void displayInfo() {
         System.out.println("Plat Nomor: " + this.platNomor);
         System.out.println("Status Mesin: " + (this.statusMesin ? "On" : "Off"));
         System.out.println("Kecepatan: " + this.kecepatan);
         System.out.println("===========================");
+    }
+
+    public String getPlatNomor() {
+        return platNomor;
+    }
+
+    public void setPlatNomor(String platNomor) {
+        this.platNomor = platNomor;
+    }
+
+    public boolean getstatusMesin() {
+        return statusMesin;
+    }
+
+    public void setstatusMesin(boolean statusMesin) {
+        this.statusMesin = statusMesin;
+    }
+
+    public int getKecepatan() {
+        return kecepatan;
+    }
+
+    public void setKecepatan(int kecepatan) {
+       if (!this.statusMesin && kecepatan > 0){
+            System.out.println("kecepatan tidak boleh lebih dari 0 jika mesin off");
+       } else {
+           this.kecepatan = kecepatan;
+       }
+
     }
 }
