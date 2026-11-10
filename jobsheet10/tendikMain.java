@@ -20,7 +20,10 @@ public class tendikMain {
         System.out.println(pegawai1.nama);
         pegawai1.displayInfo();
 
-        
+        dosen newdosen =(dosen) pegawai1;
+        System.out.println(newdosen.nama);
+        System.out.println(newdosen.nidn);
+        newdosen.mengajar();
 
 
         System.out.println("Jumlah pegawai: " + daftarPegawai.size());
