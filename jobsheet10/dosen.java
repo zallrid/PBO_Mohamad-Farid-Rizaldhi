@@ -12,7 +12,12 @@ public class dosen extends pegawai {
         this.nidn = nidn;
     }
 
+
     public void displayInfo(){
+        super.displayInfo();
+        System.out.println("NIDN: " + nidn);
+    }
+    public void mengajar(){
         System.out.println("Membuat rencana pembelajaran");
         System.out.println("menyusun materi");
         System.out.println("melaksanankan PBM");

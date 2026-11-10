@@ -13,7 +13,18 @@ public class tendikMain {
         daftarPegawai.add(dosen2);
         daftarPegawai.add(tendik1);
         daftarPegawai.add(tendik2);
+        
+        pegawai pegawai1 = dosen1;
+
+        System.out.println(pegawai1.nip);
+        System.out.println(pegawai1.nama);
+        pegawai1.displayInfo();
+
+        
+
 
         System.out.println("Jumlah pegawai: " + daftarPegawai.size());
+
+
     }
 }
