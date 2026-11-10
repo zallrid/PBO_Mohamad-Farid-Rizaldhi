@@ -26,7 +26,7 @@ public class anggota {
     }
 
     public void pinjam (int nominal){
-        if ((jumlahPinjam = nominal) > limitPinjaman){
+        if ((jumlahPinjam + nominal) > limitPinjaman){
             System.out.println("Maaf, jumlah pinjaman melebihi limit");
         }else {
             jumlahPinjam += nominal;

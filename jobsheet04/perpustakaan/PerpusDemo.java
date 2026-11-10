@@ -17,5 +17,9 @@ public class PerpusDemo {
 
         Anggota anggota2 = new Anggota ("A002", "Syamuli Bin Tulloh");
         System.out.println(anggota2.getInfo());
+
+        buku1.setJudul("PBO");
+
+        System.out.println(buku1.getInfo());
     }
 }
