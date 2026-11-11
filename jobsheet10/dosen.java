@@ -1,6 +1,6 @@
 package jobsheet10;
 
-public class dosen extends pegawai {
+public class dosen extends pegawai implements Comparable<dosen>{
     public String nidn;
 
     public dosen(){
@@ -22,5 +22,10 @@ public class dosen extends pegawai {
         System.out.println("menyusun materi");
         System.out.println("melaksanankan PBM");
         System.out.println("melakukan evaluasi");
+    }
+
+    @Override 
+    public int compareTo(dosen otherDosen){
+        return this.nama.compareTo(otherDosen.nama);
     }
 }
